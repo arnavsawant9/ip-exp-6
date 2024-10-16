@@ -1,0 +1,10 @@
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd60a;
+}
+
+.flex li{
+    margin: 5px
+}

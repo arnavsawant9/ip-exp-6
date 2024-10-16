@@ -1,0 +1,13 @@
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about h1{
+    float:left;
+    justify-content: center;
+    margin-right: 20px;
+}

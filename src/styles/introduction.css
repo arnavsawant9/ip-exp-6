@@ -1,0 +1,91 @@
+/* Main container for image and text */
+.container {
+    display: flex;
+    justify-content: space-between; /* Adds space between the image and text */
+    align-items: center; /* Centers vertically */
+    min-height: 80vh; /* Covers most of the viewport height */
+    padding: 40px; /* Adds more padding */
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Subtle background color */
+  }
+  
+  /* Styling for the text container */
+  /* Adjusted text container to move it towards the right */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Keeps text aligned to the left */
+    max-width: 50%;
+    padding: 20px;
+    margin-left: 40px; /* Moves the text slightly towards the right */
+  }
+  
+  /* Headline text styling */
+  .text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #222; /* Darker, cleaner text color */
+    font-weight: bold;
+  }
+  
+  /* Highlighted part of headline */
+  .text h1 span {
+    color: #f15b2a; /* Accent color for highlighted text */
+  }
+  
+  /* Paragraph text styling */
+  .text p {
+    font-size: 1.3rem;
+    color: #555; /* Slightly softer color for paragraph */
+    margin: 20px 0;
+    line-height: 1.5; /* Better readability */
+  }
+  
+  /* Button styling */
+  .text a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5f52ff;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .text a:hover {
+    background-color: #4138b3; /* Darker shade on hover */
+  }
+  
+  
+  /* Image container and styling */
+  .image {
+    max-width: 50%; /* Sets max width for image */
+    height: auto;
+    border-radius: 50%; /* Creates a circular image */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for better depth */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stacks image and text vertically */
+      text-align: center; /* Centers text and image for smaller screens */
+      padding: 20px; /* Reduce padding on smaller devices */
+    }
+  
+    .text {
+      max-width: 100%;
+      text-align: center; /* Center text on smaller devices */
+    }
+  
+    .image {
+      max-width: 60%; /* Makes the image slightly larger in relation to text */
+      margin-bottom: 30px; /* Adds space between stacked image and text */
+    }
+  }
+  
