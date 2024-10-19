@@ -1,0 +1,8 @@
+/* Add this to your app.css file */
+body {
+    background: linear-gradient(to bottom right, #1e3a8a, #3b82f6, #60a5fa); /* Smooth blue gradient */
+    min-height: 100vh; /* Ensures the gradient covers the entire viewport height */
+    margin: 0; /* Remove default margin */
+    color: white; /* Optional: Set a default text color */
+    font-family: 'Arial', sans-serif; /* Optional: Set a default font */
+}
